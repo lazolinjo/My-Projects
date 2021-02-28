@@ -1,4 +1,4 @@
-Pyimport webbrowser, sys, pyperclip
+import webbrowser, sys, pyperclip
 
 sys.argv # ['mapit.py', '870', 'Valencia', 'St.']
 
