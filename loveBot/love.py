@@ -1,4 +1,4 @@
-#Made by Lazar, Hello world!
+#Made by Lazar, lazko2002@gmail.com
 import random
 
 loveList = ["Volim te", "I love you", "je t'aime", "ich liebe dich", "я тебя люблю", "Te quiero", "わたしは、あなたを愛しています", "Is breá liom tú", "te amo",
