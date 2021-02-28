@@ -1,0 +1,1 @@
+@py.exe C:\Users\Andricka\maper\mapit.py %*
