@@ -1,6 +1,6 @@
-#Made by Lazar, lazko2002@gmail.com
 import random
 
+#Array
 loveList = ["Volim te", "I love you", "je t'aime", "ich liebe dich", "я тебя люблю", "Te quiero", "わたしは、あなたを愛しています", "Is breá liom tú", "te amo",
 "ti amo", "обичам те",  "Jeg elsker deg", "Lúbim ťa", "я цябе кахаю", "Σε αγαπώ", "seni seviyorum", "мен сені жақсы көремін", "Ek het jou lief", "ndiyakuthanda",
 "Minä rakastan sinua", "T'estimo", "kocham Cię", "Eu amo Você", "te iubesc", "사랑해", "Волим те", "Aku cinta kamu", "म तिमीलाई माया गर्छु",  "我爱你", "a hụrụ m gị n'anya",
@@ -14,5 +14,6 @@ loveList = ["Volim te", "I love you", "je t'aime", "ich liebe dich", "я теб�
 "میں تم سے پیار کرتا ہوں", "ik hâld fan dy", "Aloha wau iā 'oe", "Ina son ku", "אני אוהב אותך", "मैं आपसे प्यार करती हूँ", "Kuv hlub koj", "ik hou van jou", "እወድሃለሁ",
 "Volim te", "Miluji tě", "ndimakukondani", "jag älskar dig", "tha gaol agam ort", "Ndinokuda", "我愛你", "Thanks for everything", "I love you so much"]
 
+#module makes random choice
 print(random.choice(loveList))
 
