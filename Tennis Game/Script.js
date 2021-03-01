@@ -16,7 +16,7 @@ var paddle2Y = 250;
 const PADDLE_THICKNESS = 10;
 const PADDLE_HEIGHT = 100;
 
-//Mis
+//Mouse
 function calculateMousePos(evt) {
 	var rect = canvas.getBoundingClientRect();
 	var root = document.documentElement;
@@ -28,7 +28,7 @@ function calculateMousePos(evt) {
 	};
 }
 
-//L klik
+//Left click
 function handleMouseClick (evt) {
 	if (showingWinScreen) {
 		player1Score = 0;
@@ -40,7 +40,7 @@ function handleMouseClick (evt) {
 canvas = document.getElementById('gameCanvas');
 canvasContext = canvas.getContext('2d');
 
-//Brzina loptice
+//ball speed
 var framesPerSecond = 30;
 setInterval(function() {
 	moveEverything();
@@ -55,7 +55,7 @@ canvas.addEventListener('mousemove',
 		paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);
 	});
 
-//resetovanje loptice
+//Ball Reset
 function ballReset() {
 	if (player1Score >= WINNING_SCORE || 
 		 	player2Score >= WINNING_SCORE) {
@@ -120,7 +120,7 @@ function moveEverything() {
 	}
 }
 
-//Mreza
+//Net
 function drawNet() {
 	for(var i=0; i<canvas.height; i+=40) {
 		colorRect(canvas.width/2-1,i,2,20,'white');
@@ -152,7 +152,7 @@ function drawEverything() {
 	
 }
 
-//Grafike
+//Graphics
 function colorCircle(centerX, centerY, radius, drawColor) {
 	canvasContext.fillStyle = drawColor;
 	canvasContext.beginPath();
