@@ -12,7 +12,7 @@ loveList = ["Volim te", "I love you", "je t'aime", "ich liebe dich", "я теб�
 "gihigugma tika", "gihigugma tika", "kea u rata", "මම ඔයාට ආදරෙයි", "Ljubim te", "waan ku jeclahay", "abdi bogoh ka anjeun", "Mahal kita", "ฉันรักคุณ", 
 "நான் உன்னை நேசிக்கிறேன்", "мин сине яратам", "Ман туро дӯст медорам", "నేను నిన్ను ప్రేమిస్తున్నాను", "men seni söýýärin", "Men seni Sevaman", "مەن سىزنى ياخشى كۆرىمەن",
 "میں تم سے پیار کرتا ہوں", "ik hâld fan dy", "Aloha wau iā 'oe", "Ina son ku", "אני אוהב אותך", "मैं आपसे प्यार करती हूँ", "Kuv hlub koj", "ik hou van jou", "እወድሃለሁ",
-"Volim te", "Miluji tě", "ndimakukondani", "jag älskar dig", "tha gaol agam ort", "Ndinokuda", "我愛你", "Thanks for everything", "I love you so much"]
+"Volim te", "Miluji tě", "ndimakukondani", "jag älskar dig", "tha gaol agam ort", "Ndinokuda", "我愛你"]
 
 #module makes random choice
 print(random.choice(loveList))
