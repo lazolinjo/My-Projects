@@ -3,12 +3,12 @@ import PySimpleGUI as sg
 todo = []
 
 layout = [
-    [sg.Text('ToDo')],
+    [sg.Text('Todo')],
     [sg.InputText('Enter Todo Item', key='todoKey'), sg.Button(button_text='Add', key="add_save")],
     [sg.Listbox(values=todo, size=(40, 10), key="items"), sg.Button('Delete'), sg.Button('Edit')],
 ]
 
-window = sg.Window('todo app', layout)
+window = sg.Window('LList', layout, icon=r'C:\Users\Andricka\Desktop\Projects\My-Projects\Todo list\logo.ico')
 while True:  # event loop
     event, values = window.Read()
     if event == "add_save":
