@@ -1,3 +1,6 @@
+from win32con import TC_SA_INTEGER
+
+
 def collatz(number):
     while number != 1:
         if number % 2 == 0: #If number is even

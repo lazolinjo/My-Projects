@@ -55,6 +55,7 @@ if len(argv) != 2:
     print("=" * 35)
     exit(1)
 
+
 # Directory Path
 PATH = Path(argv[1])
 
