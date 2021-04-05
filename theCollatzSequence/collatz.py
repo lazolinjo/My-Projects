@@ -1,5 +1,3 @@
-from win32con import TC_SA_INTEGER
-
 
 def collatz(number):
     while number != 1:
