@@ -1,6 +1,10 @@
 from asyncio import tasks
+from tkinter import *
 import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import InputText
+import pickle
+
+file_object = open ('saved.txt', 'a') 
 
 def focus_control(event):
     if window['todo_item'].get() == '':
@@ -19,7 +23,7 @@ layout = [
     [sg.Listbox(values=tasks, size=(40, 10), key="items"), sg.Button('Delete'), sg.Button('Edit')],
 ]
 
-window = sg.Window('LList', layout, icon=r'C:\Users\Andricka\Desktop\Projects\My-Projects\Todo list\logo.ico', finalize=True)
+window = sg.indow('LList', layout, icon=r'logo.ico', finalize=True)
 window['todo_item'].update(select=True)
 window['todo_item'].Widget.bind("<FocusIn>", focus_control)
 
@@ -29,6 +33,7 @@ while True:  # Event Loop
         tasks.append(values['todo_item'])
         window.FindElement('items').Update(values=tasks)
         window.FindElement('add_save').Update("Add")
+        window['todo_item'].update('')
 
     elif event == "Delete":
         tasks.remove(values["items"][0])
@@ -44,4 +49,6 @@ while True:  # Event Loop
     elif event == None:
         break
 
+file_object.write('tasks')
+file_object.close()
 window.Close()
