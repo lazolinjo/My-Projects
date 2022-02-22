@@ -1,10 +1,13 @@
 from asyncio import tasks
 from tkinter import *
+from tkinter import filedialog
 import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import InputText
 import pickle
 
-file_object = open ('saved.txt', 'a') 
+def openFile():
+    filepath = filedialog.askopenfilename(initialdir="C:\Users\Andricka\Desktop\Projects\My-Projects\Todo list")
+
 
 def focus_control(event):
     if window['todo_item'].get() == '':
@@ -49,6 +52,4 @@ while True:  # Event Loop
     elif event == None:
         break
 
-file_object.write('tasks')
-file_object.close()
 window.Close()
