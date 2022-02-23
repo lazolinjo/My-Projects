@@ -11,9 +11,9 @@ def decider(number):
 print('Please enter a number')
 
 try:
-    num = int(input()) #dodaje korisnicki input
+    num = int(input()) #user input
     decider(num)
-except ValueError: #Ako dobijete gresku
-    print('Molim Vas koristite samo cele brojeve')
+except ValueError: #Error
+    print('Please only write whole numbers')
 
 
